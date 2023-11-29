@@ -67,14 +67,14 @@ class _HomeScreenState extends State<HomeScreen> {
         ),
         body: TabBarView(
           children: [
-            Text('Community'),
+            const Text('Community'),
             ListView.builder(itemBuilder: (context, index){
-              return ListTile(
+              return const ListTile(
                 leading: CircleAvatar(
                   backgroundImage: NetworkImage('https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'),
                 ),
-                title: Text('Zakria'),
-                subtitle: Text('salam sanga ye!'),
+                title: Text('Zakaria'),
+                subtitle: Text('salam sang ye!'),
                 trailing: Text('6:30 PM'),
               );
 
@@ -87,7 +87,7 @@ class _HomeScreenState extends State<HomeScreen> {
                     mainAxisAlignment: MainAxisAlignment.start,
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      Text(('New Updates')),
+                      const Text(('New Updates')),
                       ListTile(
                         leading: Container(
                           decoration: BoxDecoration(
@@ -98,12 +98,12 @@ class _HomeScreenState extends State<HomeScreen> {
 
                               )
                           ),
-                          child: CircleAvatar(
+                          child: const CircleAvatar(
                             backgroundImage: NetworkImage('https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'),
                           ),
                         ),
-                        title: Text('Zakria'),
-                        subtitle: Text('2 min ago'),
+                        title: const Text('Zakaria'),
+                        subtitle: const Text('2 min ago'),
 
                         // trailing: Icon(index /2 == 3 ? Icons.phone : Icons.video_call_rounded),
                       ),
@@ -122,27 +122,27 @@ class _HomeScreenState extends State<HomeScreen> {
 
                         )
                     ),
-                    child: CircleAvatar(
+                    child: const CircleAvatar(
                       backgroundImage: NetworkImage('https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'),
                     ),
                   ),
-                  title: Text('Zakria'),
-                  subtitle: Text('2 min ago'),
+                  title: const Text('Zakaria'),
+                  subtitle: const Text('2 min ago'),
 
                   // trailing: Icon(index /2 == 3 ? Icons.phone : Icons.video_call_rounded),
                 );
-              };
+              }
 
 
 
             }),
             ListView.builder(itemBuilder: (context, index){
               return ListTile(
-                leading: CircleAvatar(
+                leading: const CircleAvatar(
                   backgroundImage: NetworkImage('https://images.pexels.com/photos/220453/pexels-photo-220453.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2'),
                 ),
-                title: Text('Zakria'),
-                subtitle: Text('You missed a call'),
+                title: const Text('Zakaria'),
+                subtitle: const Text('You missed a call'),
                 trailing: Icon(index.isEven ? Icons.phone : Icons.video_call_rounded),
                 // trailing: Icon(index /2 == 3 ? Icons.phone : Icons.video_call_rounded),
               );
